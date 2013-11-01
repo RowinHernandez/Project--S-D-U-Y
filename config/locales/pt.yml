@@ -1,0 +1,28 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+pt:
+  hello: "Olá Mundo"
+  people: 
+    title:
+      index: 'Pessoas'
+      new: 'Nova Pessoa'
+    name: "Nome"
+    surname: "Nome"
+    email: "Correio"
+    phone: "Telefone"
+    avatar: "Imagem"
+  rails:
+    titles:
+      new: 'Nova edição de trilhos'
+      index: 'Questões trilhos'
+    title: 'Título'
+    body: 'Corpo'
+    date: 'Data'
+  new: "Mais"
+  close: "Fechar"
+  create: "Criar"
+  edit: "Editar"
+  destroy: "Destruir"
+  cancel: "Cancelar"
+  show: "Observar"

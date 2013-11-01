@@ -1,0 +1,9 @@
+Mon, 28 Oct 2013 23:20:09 -0430
+doc/README_FOR_APP	Mon, 28 Oct 2013 16:49:26 -0430
+app/controllers/application_controller.rb	Mon, 28 Oct 2013 18:47:27 -0430
+app/controllers/people_controller.rb	Mon, 28 Oct 2013 20:44:58 -0430
+app/helpers/application_helper.rb	Mon, 28 Oct 2013 16:49:26 -0430
+app/helpers/people_helper.rb	Mon, 28 Oct 2013 17:22:49 -0430
+app/models/person.rb	Mon, 28 Oct 2013 20:45:05 -0430
+app/models/user.rb	Mon, 28 Oct 2013 18:46:53 -0430
+app/uploaders/avatar_uploader.rb	Mon, 28 Oct 2013 17:24:01 -0430

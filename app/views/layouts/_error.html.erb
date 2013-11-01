@@ -1,0 +1,9 @@
+<div id="error_explanation">
+  <%= pluralize(@person.errors.count, "error") %>
+
+  <ul>
+  <% @person.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+  <% end %>
+  </ul>
+</div>

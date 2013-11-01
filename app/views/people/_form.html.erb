@@ -1,0 +1,58 @@
+<%= form_for(@person) do |f| %>
+  <% if @person.errors.any? %>
+    <div id="error_explanation">
+      <%= pluralize(@person.errors.count, "error") %>
+    
+      <ul>
+      <% @person.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<table class="table table-bordered">
+  <tr>
+    <td>
+      <div class="field">
+        <%= I18n.t("people.avatar") %>
+        <%= f.file_field :avatar %>
+      </div>
+    </td>
+    <td>
+      <div class="field">
+        <%= I18n.t("people.name") %>
+        <%= f.text_field :name %>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="field">
+        <%= I18n.t("people.surname") %>
+        <%= f.text_field :surname %>
+      </div>
+    </td>
+    <td>
+      <div class="field">
+        <%= I18n.t("people.email") %>
+        <%= f.email_field :email %>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="field">
+        <%= I18n.t("people.phone") %>
+        <%= f.phone_field :phone %>
+      </div>
+    </td>
+    <td>
+    </td>
+  </tr>
+</table>
+<div class="form-actions">
+  <%= f.submit I18n.t("create"), :class => 'btn btn-success' %>
+  <%= link_to I18n.t(('cancel'), :default => t("helpers.links.cancel")), people_path, :class => 'btn btn-warning' %>
+</div>
+<% end %>
+

@@ -1,0 +1,28 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+ar:
+  hello: "مرحبا العالم"
+  people: 
+    title:
+      index: 'الناس'
+      new: 'شخص جديد'
+    name: "اسم"
+    surname: "اسم"
+    email: "بريد"
+    phone: "هاتف"
+    avatar: "صورة"
+  rails:
+    titles:
+      index: 'المواضيع القضبان'
+      new: 'موضوع جديد القضبان'
+    title: 'لقب'
+    body: 'هيئة'
+    date: 'تاريخ'
+  new: "إضافي"
+  close: "أغلق"
+  create: "خلق"
+  edit: "تعديل"
+  destroy: "هدم"
+  cancel: "إلغاء"
+  show: "راقب"

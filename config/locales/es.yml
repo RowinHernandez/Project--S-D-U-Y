@@ -1,0 +1,28 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+es:
+  hello: "Hola mundo"
+  people: 
+    title:
+      index: 'Personas'
+      new: 'Nueva Persona'
+    name: "Nombre"
+    surname: "Apellido"
+    email: "Correo"
+    phone: "Telefono"
+    avatar: "Imagen"
+  rails:
+    titles:
+      new: 'Nuevo tema de Rails'
+      index: 'Temas de Rails'
+    title: 'Titulo'
+    body: 'Contenido'
+    date: 'Fecha'
+  new: "Nuevo"
+  close: "Cerrar"
+  create: "Crear"
+  edit: "Editar"
+  destroy: "Destruir"
+  cancel: "Cancelar"
+  show: "Ver"
