@@ -1,5 +1,5 @@
 # Sample localization file for English. Add more files in this directory for other locales.
-# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+# See https://github.com/svenfuchs/notices-i18n/tree/master/notices%2Flocale for starting points.
 
 pt:
   hello: "Olá Mundo"
@@ -12,7 +12,7 @@ pt:
     email: "Correio"
     phone: "Telefone"
     avatar: "Imagem"
-  rails:
+  notices:
     titles:
       new: 'Nova edição de trilhos'
       index: 'Questões trilhos'

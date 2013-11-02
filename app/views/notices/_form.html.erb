@@ -1,10 +1,10 @@
-<%= form_for(@rail) do |f| %>
-  <% if @rail.errors.any? %>
+<%= form_for(@notice) do |f| %>
+  <% if @notice.errors.any? %>
     <div id="error_explanation">
-      <%= pluralize(@rail.errors.count, "error") %>
+      <%= pluralize(@notice.errors.count, "error") %>
     
       <ul>
-      <% @rail.errors.full_messages.each do |msg| %>
+      <% @notice.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
       </ul>
@@ -17,7 +17,7 @@
         <%= f.label I18n.t("notices.date"), :class => 'control-label' %>
         <div class="controls">
           <%= f.hidden_field :date %>
-          <%= text_field_tag 'date_datetime_select', @notice.try(:date).try(:strftime,'%d/%m/%Y %H:%M %p'), :class => 'datetime_select', "alt_datetime_field" => "rail_date" %>
+          <%= text_field_tag 'date_datetime_select', @notice.try(:date).try(:strftime,'%d/%m/%Y %H:%M %p'), :class => 'datetime_select', "alt_datetime_field" => "notice_date" %>
         </div>
       </div>
     </td>
@@ -41,7 +41,7 @@
 </table>
 <div class="form-actions">
   <%= f.submit I18n.t("create"), :class => 'btn btn-success' %>
-  <%= link_to I18n.t(('cancel'), :default => t("helpers.links.cancel")), rails_path, :class => 'btn btn-warning' %>
+  <%= link_to I18n.t(('cancel'), :default => t("helpers.links.cancel")), notices_path, :class => 'btn btn-warning' %>
 </div>
 <% end %>
 

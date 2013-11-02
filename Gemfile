@@ -3,9 +3,9 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.13'
 
 # Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
+# gem 'notices', :git => 'git://github.com/notices/notices.git'
 
-gem 'sqlite3'
+gem 'pg'
 
 group :development, :test do
     gem 'railroady'
@@ -35,6 +35,7 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
+gem 'simple_form'
 gem 'carrierwave'
 gem 'will_paginate'
 gem 'jquery-rails'
@@ -43,6 +44,5 @@ gem 'debugger'
 gem "therubyracer"
 gem "less-rails"
 gem 'twitter-bootstrap-rails'
-gem 'airbrake'
 gem 'jquery-ui-rails'
 gem 'bootstrap-datepicker-rails'

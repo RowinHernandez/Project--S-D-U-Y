@@ -1,4 +1,4 @@
-<%- model_class = Rail -%>
+<%- model_class = Notice -%>
 <div class="page-header">
   <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
 </div>
@@ -7,17 +7,17 @@
   <tr>
     <td>
       <dt><legend><%= model_class.human_attribute_name(:title) %>:</legend></dt>
-      <dd><%= @rail.title %></dd>
+      <dd><%= @notice.title %></dd>
     </td>
     <td>  
       <dt><legend><%= model_class.human_attribute_name(:body) %>:</legend></dt>
-      <dd><%= @rail.body %></dd>
+      <dd><%= @notice.body %></dd>
     </td>
   </tr>
   <tr>
     <td>
       <dt><legend><%= model_class.human_attribute_name(:date) %>:</legend></dt>
-      <dd><%= @rail.date %></dd>
+      <dd><%= @notice.date %></dd>
     </td>
     <td>
     </td>
@@ -26,14 +26,14 @@
 
 <div class="form-actions">
   <%= link_to I18n.t('.new', :default => t("helpers.links.new")),
-            new_rail_path,
+            new_notice_path,
             :class => 'btn btn-primary btn-success' %>
   <%= link_to I18n.t('.back', :default => t("helpers.links.back")),
-              rails_path, :class => 'btn btn-inverse'  %>
+              notices_path, :class => 'btn btn-inverse'  %>
   <%= link_to I18n.t('.edit', :default => t("helpers.links.edit")),
-              edit_rail_path(@rail), :class => 'btn btn-info' %>
+              edit_notice_path(@notice), :class => 'btn btn-info' %>
   <%= link_to I18n.t('.destroy', :default => t("helpers.links.destroy")),
-              rail_path(@rail),
+              notice_path(@notice),
               :method => 'delete',
               :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
               :class => 'btn btn-danger' %>
