@@ -14,7 +14,7 @@
   <tr>
     <td>
       <div>
-        <%= f.label I18n.t("rails.date"), :class => 'control-label' %>
+        <%= f.label I18n.t("notices.date"), :class => 'control-label' %>
         <div class="controls">
           <%= f.hidden_field :date %>
           <%= text_field_tag 'date_datetime_select', @notice.try(:date).try(:strftime,'%d/%m/%Y %H:%M %p'), :class => 'datetime_select', "alt_datetime_field" => "rail_date" %>
@@ -23,7 +23,7 @@
     </td>
     <td>
       <div class="field">
-        <%= I18n.t("rails.title") %>
+        <%= I18n.t("notices.title") %>
         <%= f.text_field :title %>
       </div>
     </td>
@@ -31,7 +31,7 @@
   <tr>
     <td>
       <div class="field">
-        <%= I18n.t("rails.body") %>
+        <%= I18n.t("notices.body") %>
         <%= f.text_area :body %>
       </div>
     </td>
