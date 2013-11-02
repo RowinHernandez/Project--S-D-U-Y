@@ -7,6 +7,7 @@
     <tr>
       <th class="text-error"><%= I18n.t("notices.title") %></th>
       <th class="text-info"><%= I18n.t("notices.date") %></th>
+      <th class="text-error">Person</th>
       <th></th>
     </tr>
   </thead>
@@ -15,6 +16,7 @@
       <tr class="info">
         <td><%= link_to notice.title, notice_path(notice), :class => "btn btn-link" %></td>
         <td><%= notice.date %></td>
+        <td><%= notice.person_id %></td>
         <td>
           <%= link_to I18n.t('.show', :default => t("helpers.links.edit")),
                       notice_path(notice), :class => 'btn btn-mini btn-info' %>
