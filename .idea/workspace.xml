@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03658d61-315c-4356-a971-e2da8681459f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/notices/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/notices/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/notices_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/notices_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/notices/index.html.erb" afterPath="$PROJECT_DIR$/app/views/notices/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Project-M.R..iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="03658d61-315c-4356-a971-e2da8681459f" time="1383436888234" ignored="false" />
+    <file path="/Dummy.txt" changelist="03658d61-315c-4356-a971-e2da8681459f" time="1383447874448" ignored="false" />
     <file path="/dummy.txt" changelist="03658d61-315c-4356-a971-e2da8681459f" time="1383432393718" ignored="false" />
     <file path="/Bash" changelist="03658d61-315c-4356-a971-e2da8681459f" time="1383432366695" ignored="false" />
     <file path="/20131102154836_change.rb" changelist="03658d61-315c-4356-a971-e2da8681459f" time="1383407801154" ignored="false" />
@@ -22,11 +22,12 @@
     <file path="/pt.yml" changelist="03658d61-315c-4356-a971-e2da8681459f" time="1383409113398" ignored="false" />
     <file path="/rs.yml" changelist="03658d61-315c-4356-a971-e2da8681459f" time="1383409124851" ignored="false" />
     <file path="/a.dummy" changelist="03658d61-315c-4356-a971-e2da8681459f" time="1383445160274" ignored="false" />
-    <file path="/index.html.erb" changelist="03658d61-315c-4356-a971-e2da8681459f" time="1383432846505" ignored="false" />
+    <file path="/index.html.erb" changelist="03658d61-315c-4356-a971-e2da8681459f" time="1383447504116" ignored="false" />
     <file path="/notice.rb" changelist="03658d61-315c-4356-a971-e2da8681459f" time="1383432698840" ignored="false" />
     <file path="/person.rb" changelist="03658d61-315c-4356-a971-e2da8681459f" time="1383432524480" ignored="false" />
     <file path="/_form.html.erb" changelist="03658d61-315c-4356-a971-e2da8681459f" time="1383445962924" ignored="false" />
     <file path="/notices_controller.rb" changelist="03658d61-315c-4356-a971-e2da8681459f" time="1383446042239" ignored="false" />
+    <file path="/application.html.erb" changelist="03658d61-315c-4356-a971-e2da8681459f" time="1383446704967" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +50,7 @@
       <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/notices/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="40" selection-start="1098" selection-end="1098" vertical-scroll-proportion="-9.416667">
+            <state line="40" column="40" selection-start="1098" selection-end="1098" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -64,10 +65,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="notices_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="notices_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/notices_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="67" selection-start="115" selection-end="115" vertical-scroll-proportion="0.04076087">
+            <state line="1" column="67" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/notices/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="4" selection-start="447" selection-end="447" vertical-scroll-proportion="0.30522767">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="104" selection-start="1859" selection-end="1859" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -110,7 +129,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/rails_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/notices/show.html.erb" />
         <option value="$PROJECT_DIR$/config/locales/al.yml" />
         <option value="$PROJECT_DIR$/config/locales/ar.yml" />
@@ -122,10 +140,11 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/models/person.rb" />
         <option value="$PROJECT_DIR$/app/models/notice.rb" />
-        <option value="$PROJECT_DIR$/app/views/notices/index.html.erb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/app/views/notices/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/notices_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/notices/index.html.erb" />
       </list>
     </option>
   </component>
@@ -169,6 +188,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -254,6 +274,28 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project-M.R." />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project-M.R." />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -293,20 +335,19 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="preferences.externalTools" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="preferences.externalTools" />
     <property name="FullScreen" value="false" />
     <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
     <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
-    <property name="Ruby.ViewRefParam.DefaultExtension" value="html.erb" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="Ruby.ViewRefParam.DefaultExtension" value="html.erb" />
   </component>
   <component name="RunManager" selected="Rails.Development: Project-M.R.">
     <configuration default="false" name="db:migrate" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
@@ -605,12 +646,12 @@
       <method />
     </configuration>
     <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="Rake.test" />
-      <item index="1" class="java.lang.String" itemvalue="Rake.spec" />
-      <item index="2" class="java.lang.String" itemvalue="Rails.Production: Project-M.R." />
-      <item index="3" class="java.lang.String" itemvalue="Rails.Development: Project-M.R." />
-      <item index="4" class="java.lang.String" itemvalue="Rake.db:migrate" />
-      <item index="5" class="java.lang.String" itemvalue="Rake.db:rollback" />
+      <item index="0" class="java.lang.String" itemvalue="Rake.db:migrate" />
+      <item index="1" class="java.lang.String" itemvalue="Rake.db:rollback" />
+      <item index="2" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="3" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="4" class="java.lang.String" itemvalue="Rails.Production: Project-M.R." />
+      <item index="5" class="java.lang.String" itemvalue="Rails.Development: Project-M.R." />
     </list>
     <recent_temporary>
       <list size="2">
@@ -667,15 +708,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="37" y="22" width="1243" height="778" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32826748" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32826748" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19548872" sideWeight="0.6018237" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39817628" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24979115" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1946533" sideWeight="0.6018237" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39817628" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24979115" sideWeight="0.2863436" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892805" sideWeight="0.5004177" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892805" sideWeight="0.4995823" order="2" side_tool="false" content_ui="tabs" />
@@ -683,6 +723,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -750,13 +791,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/locales/es.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="9" selection-start="405" selection-end="405" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/locales/fr.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="9" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0">
@@ -803,21 +837,13 @@
             <Category>Migration fields</Category>
             <Category>Association fields</Category>
           </Categories>
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="45" selection-start="2623" selection-end="2623" vertical-scroll-proportion="0.6086956">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/notices/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="49" selection-start="1352" selection-end="1352" vertical-scroll-proportion="1.1948051">
-          <folding />
-        </state>
+        <state line="54" column="45" selection-start="2623" selection-end="2623" vertical-scroll-proportion="0.6086956" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
@@ -847,17 +873,17 @@
             <node x="" y="">ActiveRecord::Integration</node>
             <node x="" y="">ActiveRecord::Persistence</node>
             <node x="" y="">ActiveRecord::AttributeMethods::Query</node>
-            <node x="" y="">ActiveRecord::Translation</node>
             <node x="" y="">ActiveRecord::QueryCache::ClassMethods</node>
+            <node x="" y="">ActiveRecord::Translation</node>
             <node x="" y="">ActiveRecord::Serialization</node>
             <node x="" y="">ActiveModel::Callbacks</node>
             <node x="" y="">Notice</node>
             <node x="" y="">ActiveModel::Naming</node>
             <node x="" y="">ActiveModel::Serializers::JSON</node>
-            <node x="" y="">ActiveModel::AttributeMethods</node>
             <node x="" y="">ActiveModel::Dirty</node>
-            <node x="" y="">ActiveRecord::DynamicMatchers</node>
+            <node x="" y="">ActiveModel::AttributeMethods</node>
             <node x="" y="">ActiveRecord::Aggregations</node>
+            <node x="" y="">ActiveRecord::DynamicMatchers</node>
             <node x="" y="">ActiveRecord::Locking::Optimistic</node>
             <node x="" y="">ActiveRecord::AttributeMethods::Dirty</node>
             <node x="" y="">ActiveRecord::Validations</node>
@@ -882,35 +908,34 @@
             <node x="" y="">ActiveRecord::IdentityMap</node>
             <node x="" y="">ActiveModel::Validations::Callbacks</node>
             <node x="" y="">ActiveRecord::Timestamp</node>
-            <node x="" y="">CarrierWave::Mount</node>
             <node x="" y="">ActiveRecord::Transactions</node>
-            <node x="" y="">ActiveRecord::AttributeMethods::Read</node>
+            <node x="" y="">CarrierWave::Mount</node>
             <node x="" y="">ActiveRecord::AutosaveAssociation::AssociationBuilderExtension</node>
+            <node x="" y="">ActiveRecord::AttributeMethods::Read</node>
             <node x="" y="">ActiveRecord::AttributeAssignment</node>
             <node x="" y="">ActiveRecord::AttributeMethods::TimeZoneConversion</node>
             <node x="" y="">ActiveSupport::DescendantsTracker</node>
             <node x="" y="">ActiveRecord::AttributeMethods::PrimaryKey</node>
-            <node x="" y="">ActiveRecord::AttributeMethods::Write</node>
             <node x="" y="">ActiveModel::Translation</node>
+            <node x="" y="">ActiveRecord::AttributeMethods::Write</node>
             <node x="" y="">ActiveRecord::Base</node>
-            <node x="" y="">ActiveRecord::AutosaveAssociation</node>
             <node x="" y="">ActiveRecord::CounterCache</node>
+            <node x="" y="">ActiveRecord::AutosaveAssociation</node>
             <node x="" y="">ActiveModel::Validations</node>
             <node x="" y="">ActiveRecord::Callbacks</node>
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.18682380216383307" x="2567.661840744571" y="649.9917269906929" />
+          <settings layout="Hierarchic Group" zoom="0.18682380216383307" x="2568.0" y="650.0" />
           <SelectedNodes />
           <Categories />
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20131102225103_add_colum_person_id_to_notices.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="12" selection-start="70" selection-end="70" vertical-scroll-proportion="0.04076087">
-          <folding />
-        </state>
+        <state line="1" column="12" selection-start="70" selection-end="70" vertical-scroll-proportion="0.04076087" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/notice.rb">
@@ -929,7 +954,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/notices/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="40" selection-start="1098" selection-end="1098" vertical-scroll-proportion="-9.416667">
+        <state line="40" column="40" selection-start="1098" selection-end="1098" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -943,7 +968,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/notices_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="67" selection-start="115" selection-end="115" vertical-scroll-proportion="0.04076087">
+        <state line="1" column="67" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="104" selection-start="1859" selection-end="1859" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/notices/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="4" selection-start="447" selection-end="447" vertical-scroll-proportion="0.30522767">
           <folding />
         </state>
       </provider>
