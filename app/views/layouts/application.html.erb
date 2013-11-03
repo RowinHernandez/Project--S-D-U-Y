@@ -36,7 +36,7 @@
         <div class="span2 span-bordered">
           <ul class="nav nav-tabs nav-stacked">
             <% if user_signed_in? %>
-              <li><a href="/users/edit?locale=en"><i class="icon-pencil"></i><%= current_user.email  %></a></li>
+              <li><a href="/users/edit?locale=en"><i class="icon-pencil"></i><%= current_user.username  %></a></li>
             <% end %>
             <li><a href="/en/people"><i class="icon-book"></i>People  <span class="badge"><%= Person.count %></span></a></li>
             <li><a href="/en/notices"><i class="icon-pencil"></i>Notices  <span class="badge"><%= Notice.count %></span></a></li>
