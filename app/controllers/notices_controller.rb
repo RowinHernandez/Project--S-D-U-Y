@@ -1,4 +1,5 @@
 class NoticesController < ApplicationController
+  before_filter :load_people, :only => [:create, :new, :edit, :show]
   # GET /notices
   # GET /notices.json
   def index
@@ -79,5 +80,8 @@ class NoticesController < ApplicationController
       format.html { redirect_to notices_url }
       format.json { head :no_content }
     end
+  end
+  def load_people
+      @people = Person.all.collect{|person| ["(#{person.id}) #{person.name} #{person.surname}", person.id]}
   end
 end
