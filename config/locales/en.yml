@@ -7,6 +7,7 @@ en:
     title:
       index: 'People'
       new: 'New Person'
+      show: 'Show Person'
     name: "Name"
     surname: "Surname"
     email: "E-mail"

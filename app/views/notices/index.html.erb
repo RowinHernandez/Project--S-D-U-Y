@@ -7,7 +7,7 @@
     <tr>
       <th class="text-error"><%= I18n.t("notices.title") %></th>
       <th class="text-info"><%= I18n.t("notices.date") %></th>
-      <th class="text-error">Person</th>
+      <th class="text-error"><%= I18n.t("people.name") %></th>
       <th></th>
     </tr>
   </thead>
@@ -26,7 +26,7 @@
                       notice_path(notice),
                       :method => :delete,
                       :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
-                      :class => 'btn btn-mini btn-danger' %>
+                      :class => 'btn btn-lg btn-danger icon-user' %>
         </td>
       </tr>
     <% end %>
