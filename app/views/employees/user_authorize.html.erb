@@ -1,0 +1,62 @@
+<% if current_user.is_employee %>
+<section class="content" >
+  <div class="wrapper" style="width: 1000px;margin-top:45px">
+    <table class=" style1 text-center">
+      <thead>
+      <tr>
+        <th><%= sortable 'Email', 'email' %></th>
+        <th><%= sortable 'Last Sign in at', 'last_sign_in_at' %></th>
+        <th><%= sortable 'Username', 'username' %></th>
+        <th><%= sortable 'Full Name', 'full_name' %></th>
+        <th><%= sortable 'Is Employee', 'is_employee' %></th>
+        <th><%= sortable 'Is Enabled', 'is_enabled' %></th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody>
+
+        <% User.all.each do |user| %>
+          <tr>
+            <td><%= user.email %></td>
+            <!--<td><%= user.full_name %></td>-->
+            <td><%= user.last_sign_in_at  %></td>
+            <td><%= user.username  %></td>
+            <td><%= user.full_name  %></td>
+            
+            <td><input type="checkbox" name="" <%= 'checked' if user.is_employee %> data-target="<%= set_employee_employee_path(user)  %>"/></td>
+            <td><input type="checkbox" name="" <%= 'checked' if user.is_enabled %> data-target="<%= set_enabled_employee_path(user)  %>"/></td>
+            <td><%= link_to "Destroy", delete_employee_employee_path(user), :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</section>
+<% end %>
+
+<!-- JS
+================================================== -->
+<!--     // <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" charset="utf-8"></script>
+// <script src="js/bootstrap.min.js"></script>
+// <script src="js/prefixfree.min.js"></script>
+// <script src="js/jquery.uniform.min.js"></script> -->
+<script>
+    $(document).ready(function(){
+        $(":checkbox").uniform();
+    });
+
+    $(function(){
+        $("input[type='checkbox']").change(function(){
+            var item=$(this);
+            //window.open(item.data("target"))
+            window.location.href= item.data("target")
+
+        });
+    })
+
+</script>
+
+<!-- End Document
+================================================== -->
+
+

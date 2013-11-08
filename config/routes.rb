@@ -5,6 +5,16 @@ MARLONFMF::Application.routes.draw do
       resources :people
     end
       root to: 'people#index'
+    resources :employees, :only =>  [:set_employee, :set_enabled, :user_authorize] do
+    member do
+      get :set_employee
+      get :set_enabled
+      delete :delete_employee
+    end
+    collection do
+      get :user_authorize
+    end
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -7,10 +7,10 @@
   <thead>
     <tr>
       <th class="text-success"><%= I18n.t('people.avatar') %></th>
-      <th class="text-info"><%= I18n.t('people.name') %></th>
-      <th class="text-success"><%= I18n.t('people.surname') %></th>
-      <th class="text-info"><%= I18n.t('people.email') %></th>
-      <th class="text-success"><%= I18n.t('people.phone') %></th>
+      <th class="text-info"><%= sortable I18n.t('people.name'), "name" %></th>
+      <th class="text-success"><%= sortable I18n.t('people.surname'), "surname" %></th>
+      <th class="text-info"><%= sortable I18n.t('people.email'), "email" %></th>
+      <th class="text-success"><%= sortable I18n.t('people.phone'), "phone" %></th>
       <th></th>
     </tr>
   </thead>

@@ -3,7 +3,8 @@ class PeopleController < ApplicationController
   add_breadcrumb "Home", :people_path
 
   def index
-    @people = Person.all
+
+    @people = Person.order((params[:sort] || '' ) + ' ' + (params[:direction] || ''))
 
     respond_to do |format|
       format.html # index.html.erb

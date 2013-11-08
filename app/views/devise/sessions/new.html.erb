@@ -1,15 +1,32 @@
-<h2>Sign in</h2>
-
-<%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
-  <div class="form-inputs">
-    <%= f.input :username, :required => false %>
-    <%= f.input :password, :required => false %>
-    <%= f.input :remember_me, :as => :boolean if devise_mapping.rememberable? %>
+<div class="row">
+  <div class="span4 offset4 ">
+    <div align="center">
+    <h2>Sign in</h2>
+    <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+    
+      <div class="well">
+        <div class="input-prepend">
+          <span class="add-on icon-user"></span>
+          <%= f.text_field :username, :required => false, :placeholder => "Username" %>
+        </div>
+          <div class="input-prepend">
+          <span class="add-on icon-key"></span>
+          <%= f.password_field :password, :required => false, :placeholder => "Password" %>
+        </div>
+        <% if devise_mapping.rememberable? %>
+          <div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
+        <% end %>
+        <%= f.submit "Sign in", :class => "btn btn-primary btn-block" %>
+      </div>
+      <div class="well">
+        <p>
+          <%= link_to "Sign up", new_user_registration_path, :class => "btn btn-primary btn-block" %>
+          <% end %>
+          <% if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
+            <%= link_to "Forgot your password?", new_password_path(resource_name), :class => "btn btn-primary btn-block" %><br />
+          <% end %>      
+        </p>
+      </div>  
+    </div>
   </div>
-
-  <div class="form-actions">
-    <%= f.button :submit, "Sign in" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+</div>

@@ -35,7 +35,6 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-gem 'simple_form'
 gem 'carrierwave'
 gem 'will_paginate'
 gem 'jquery-rails'
