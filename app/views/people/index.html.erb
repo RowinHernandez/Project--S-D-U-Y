@@ -2,11 +2,10 @@
 <div class="page-header">
   <h1><%= I18n.t('people.title.index') %></h1>
 </div>
-<table class="table table-striped">
+<table class="table table-striped table-bordered">
 
   <thead>
     <tr>
-      <th class="text-success"><%= I18n.t('people.avatar') %></th>
       <th class="text-info"><%= sortable I18n.t('people.name'), "name" %></th>
       <th class="text-success"><%= sortable I18n.t('people.surname'), "surname" %></th>
       <th class="text-info"><%= sortable I18n.t('people.email'), "email" %></th>
@@ -17,7 +16,6 @@
   <tbody>
     <% @people.each do |person| %>
       <tr class="success">
-        <td><%= image_tag(person.avatar) %></td>
         <td><%= person.name %></td>
         <td><%= person.surname %></td>
         <td><%= person.email %></td>
