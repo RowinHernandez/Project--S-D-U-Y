@@ -18,6 +18,7 @@
 //= require jquery-ui-timepicker-addon
 //= require_tree .
 
+
 $(document).ready(function() {
   $('.datetime_select').each(function( index ) {
     var date_field = $(this);

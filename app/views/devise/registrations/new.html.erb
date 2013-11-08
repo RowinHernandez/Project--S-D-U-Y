@@ -1,10 +1,10 @@
 <div class="row">
   <div class="span4 offset4 ">
     <div align="center">
-      <h2>Sign Up</h2>
       <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
       <%= devise_error_messages! %> 
       <div class="well">
+        <h2>Sign Up</h2>
         <div class="input-prepend">
           <span class="add-on icon-book"></span>
           <%= f.text_field :full_name, :required => false, :placeholder => "Full Name" %>

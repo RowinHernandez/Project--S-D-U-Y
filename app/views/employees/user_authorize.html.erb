@@ -1,7 +1,6 @@
-<% if current_user.is_employee %>
 <section class="content" >
   <div class="wrapper" style="width: 1000px;margin-top:45px">
-    <table class=" style1 text-center">
+    <table class="table table-striped">
       <thead>
       <tr>
         <th><%= sortable 'Email', 'email' %></th>
@@ -22,7 +21,6 @@
             <td><%= user.last_sign_in_at  %></td>
             <td><%= user.username  %></td>
             <td><%= user.full_name  %></td>
-            
             <td><input type="checkbox" name="" <%= 'checked' if user.is_employee %> data-target="<%= set_employee_employee_path(user)  %>"/></td>
             <td><input type="checkbox" name="" <%= 'checked' if user.is_enabled %> data-target="<%= set_enabled_employee_path(user)  %>"/></td>
             <td><%= link_to "Destroy", delete_employee_employee_path(user), :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
@@ -32,7 +30,6 @@
     </table>
   </div>
 </section>
-<% end %>
 
 <!-- JS
 ================================================== -->

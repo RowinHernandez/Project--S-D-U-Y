@@ -30,17 +30,18 @@ div {
 
 .field_with_errors {
   padding: 2px;
-  background-color: red;
+  background-color: #ff9fa8;
   display: table;
 }
 
 #error_explanation {
-  width: 450px;
-  border: 2px solid red;
-  padding: 7px;
-  padding-bottom: 0;
-  margin-bottom: 20px;
-  background-color: #f0f0f0;
+    background-color: #F5F5F5;
+    border: 1px solid #E3E3E3;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+    margin-bottom: 20px;
+    min-height: 20px;
+    padding: 19px;
   h2 {
     text-align: left;
     font-weight: bold;
@@ -48,8 +49,8 @@ div {
     font-size: 12px;
     margin: -7px;
     margin-bottom: 0px;
-    background-color: #c00;
-    color: #fff;
+    background-color: #E3E3E3;
+    color: #707070;
   }
   ul li {
     font-size: 12px;
