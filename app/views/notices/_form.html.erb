@@ -1,5 +1,5 @@
-<%= form_for(@notice) do |f| %>
-  <% if @notice.errors.any? %>
+<%= form_for @notice, url: { action: @notice.id ? "update" : "create" } , :html => { :class => 'form-horizontal' } do |f| %>
+<% if @notice.errors.any? %>
     <div id="error_explanation">
       <%= pluralize(@notice.errors.count, "error") %>
     
@@ -36,16 +36,12 @@
       </div>
     </td>
     <td>
-      <div class="field">
-        <%= "Person" %>
-        <%= f.select(:person_id, @people) %>
-      </div>
     </td>
   </tr>
 </table>
 <div class="form-actions">
   <%= f.submit I18n.t("create"), :class => 'btn btn-success' %>
-  <%= link_to I18n.t(('cancel'), :default => t("helpers.links.cancel")), notices_path, :class => 'btn btn-danger' %>
+  <%= link_to I18n.t(('cancel'), :default => t("helpers.links.cancel")), person_notices_path, :class => 'btn btn-danger' %>
 </div>
 <% end %>
 

@@ -1,9 +1,8 @@
-class NoticesController < ApplicationController
-  before_filter :load_people, :only => [:create, :new, :edit, :show]
+class NoticesController < PeopleBaseController
   # GET /notices
   # GET /notices.json
   def index
-    @notices = Notice.all
+    @notices = @person.notices.order(:id)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -14,7 +13,7 @@ class NoticesController < ApplicationController
   # GET /notices/1
   # GET /notices/1.json
   def show
-    @notice = Notice.find(params[:id])
+    @notice = @person.notices.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -25,7 +24,7 @@ class NoticesController < ApplicationController
   # GET /notices/new
   # GET /notices/new.json
   def new
-    @notice = Notice.new
+    @notice = @person.notices.new
 
     respond_to do |format|
       format.html # new.html.erb
@@ -35,17 +34,17 @@ class NoticesController < ApplicationController
 
   # GET /notices/1/edit
   def edit
-    @notice = Notice.find(params[:id])
+    @notice = @person.notices.find(params[:id])
   end
 
   # POST /notices
   # POST /notices.json
   def create
-    @notice = Notice.new(params[:notice])
+    @notice = @person.notices.new(params[:notice])
 
     respond_to do |format|
       if @notice.save
-        format.html { redirect_to @notice, notice: 'notice was successfully created.' }
+        format.html { redirect_to person_notices_path, notice: 'notice was successfully created.' }
         format.json { render json: @notice, status: :created, location: @notice }
       else
         format.html { render action: "new" }
@@ -57,11 +56,11 @@ class NoticesController < ApplicationController
   # PUT /notices/1
   # PUT /notices/1.json
   def update
-    @notice = Notice.find(params[:id])
+    @notice = @person.notices.find(params[:id])
 
     respond_to do |format|
       if @notice.update_attributes(params[:notice])
-        format.html { redirect_to @notice, notice: 'notice was successfully updated.' }
+        format.html { redirect_to person_notices_path( @person), notice: 'notice was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
@@ -77,7 +76,7 @@ class NoticesController < ApplicationController
     @notice.destroy
 
     respond_to do |format|
-      format.html { redirect_to notices_url }
+      format.html { redirect_to person_notices_path( @person) }
       format.json { head :no_content }
     end
   end

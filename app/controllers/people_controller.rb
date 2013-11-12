@@ -21,7 +21,7 @@ class PeopleController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @person }
-      add_breadcrumb "Show", :person_path
+      add_breadcrumb @person.name, @person
     end
   end
 
@@ -40,7 +40,7 @@ class PeopleController < ApplicationController
   # GET /people/1/edit
   def edit
     @person = Person.find(params[:id])
-    add_breadcrumb "Edit", :edit_person_path
+    add_breadcrumb @person.name
   end
 
   # POST /people
